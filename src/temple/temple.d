@@ -114,7 +114,7 @@ template TempleLayoutFile(string template_file, Filter = void)
 /*
  * Implementation for a Temple layout function
  */
-package void TempleLayoutImpl(alias layout_renderer)(
+public void TempleLayoutImpl(alias layout_renderer)(
 	OutputStream buff,
 	TempleFuncType* temple_func,
 	TempleContext context = null)
